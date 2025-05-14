@@ -4,7 +4,7 @@ Shanti Kiran is a responsive, multi-page web application that promotes physical,
 ## Project Structure
 This repository includes the following main HTML files:
 
-## File	Description
+File	Description
 Shantikiranhomepage.html	Landing page with platform overview, intro video, and Google Meet link
 Shantikiranaboutyoga.html	Educational content about yoga styles, benefits, and embedded tutorials
 Shantikiranblog.html	A blog section featuring yoga wisdom, tips, and links to full articles
@@ -28,10 +28,10 @@ These files are interlinked for a seamless user experience.
 - User Registration: Front-end sign-up form with validation and fetch call to PHP backend.
 
 ## Tech Stack
--- HTML5 & CSS3 
--- JavaScript 
--- Responsive Design 
--- PHP backend placeholder
+- HTML5 & CSS3 
+- JavaScript 
+- Responsive Design 
+- PHP backend placeholder
 
 ## Setup Instructions
 
