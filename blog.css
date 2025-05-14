@@ -1,0 +1,77 @@
+.section1{display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.box{display: flex;
+   }
+.diva{display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;}
+.divb{display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;}
+.divc{display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;}
+
+.image2{padding: 20px;
+            width: 300px;
+        justify-content: space-between;
+        border-radius: 30px;}
+
+.section2{display: flex;
+                flex-direction: column;
+                align-items: center;   
+                margin-top: 30px;}
+.box2{display: flex;}
+.divd{display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                border: 1px solid black;
+                border-radius: 30px;}
+.dive{display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                border: 1px solid black;
+                border-radius: 30px;}
+.divf{display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                border: 1px solid black;
+                border-radius: 30px;} 
+
+.section3{display: flex;
+                    flex-direction: column;
+                    align-items: center;   
+                    margin-top: 30px;}
+.box3{display: flex;}
+.divg{display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: black;
+                    border: 1px solid black;
+                    border-radius: 30px;}
+.divh{display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: black;
+                    border: 1px solid black;
+                    border-radius: 30px;}
+.divi{display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: black;
+                    border: 1px solid black;
+                    border-radius: 30px;}                 

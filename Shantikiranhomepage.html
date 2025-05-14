@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Platform</title>
+    <link rel="stylesheet" href="common.css"/>
+    <style>
+    
+        #trial-face {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: white;
+            align-items: center;
+            padding: 20px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+        }
+
+        #trial-face .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 500px;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        #trial-face img {
+            max-width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height:700px;
+        }
+
+        .free-trial-btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #7a7a64;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            border: 0;
+            border-radius: 32px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .free-trial-btn:hover {
+            background-color: white;
+            border: 2px solid #7a7a64;
+            color: #7a7a64;
+        }
+
+        #youtube-ref {
+            padding: 40px 20px;
+            background-color: var(--background-color);
+            text-align: center;
+        }
+
+        #youtube-ref iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: var(--head-foot-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            #trial-face {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #trial-face img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="shantikiranlogo.jpg" width="130" height="auto" alt="Shanti Kiran Logo">
+            <a href="Shantikiranhomepage.html" class="heading-name-a" target="_parent">
+                <h1>Shanti Kiran</h1>
+                <p>Connect with Inner Calm</p>
+            </a>
+        </div>
+        <nav>
+            <a href="Shantikiranmembership.html">Membership</a>
+            <a href="Shantikiranblog.html">Blog</a>
+            <a href="Shantikiranaboutyoga.html">About Yoga</a>
+            <a href="Shantikiransupport.html">Support</a>
+            <a href="Shantikiranourteam.html">Our Team</a>
+            
+            
+            
+        </nav>
+    </header>
+
+    <section id="trial-face">
+        <div class="text-container">
+            <p style="font-size: xx-large;">About Shanti Kiran</p>
+            <p>Welcome to Shanti Kiran your bridge to inner peace and holistic well-being through the transformative practice of yoga. At Shanti Kiran we believe that yoga is more than just a series of physical postures—it's a journey that connects the body, mind, and spirit, creating harmony within and around us. Our platform offers a wide range of resources, including guided yoga sessions, meditation practices, and wellness tips, designed to empower you on your path to balance and tranquility. Whether you're a beginner exploring the foundations or an experienced yogi deepening your practice, Shanti Kiran is your sanctuary for self-discovery, rejuvenation, and spiritual growth. Embrace the art of living mindfully and let us guide you across the bridge to a peaceful and fulfilling life.
+            </p>
+            <p>At Shanti Kiran we believe yoga is a bridge that connects your inner world with the outer, bringing clarity, purpose, and serenity to your everyday life. Our platform offers thoughtfully crafted yoga routines, meditation techniques, and wellness insights to help you embark on a transformative journey. Whether you're seeking stress relief, physical vitality, or spiritual growth, Shanti Kiran provides the tools and inspiration you need to thrive. Discover the joy of moving mindfully, breathing deeply, and living fully—your bridge to peace begins here.
+            </p>
+            <section id="google-meet">
+    <p>Join our live yoga session on Monday and Friday on Google Meet:</p>
+    <a href="https://meet.google.com/your-meet-id" target="_blank" class="free-trial-btn">JOIN GOOGLE MEET</a>
+</section>
+
+
+        </div>
+        <img src="img1.webp" alt="Yoga Class">
+    </section>
+
+    <section id="youtube-ref">
+        <div class="image">
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/ICMfseFhE-E?si=gfoJZaFU9HL_qBYC&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <p>Yoga is practiced worldwide, but "yoga" in the Western world often entails a modern form of Hatha yoga
+                and a posture-based physical fitness, stress-relief and relaxation technique, consisting largely of
+                asanas.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shanti Kiran | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css" />
+  <!-- <link rel="stylesheet" href="aboutyoga.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>About Yoga</title>
+  <style>
+    :root {
+    --primary-color: #3A6351;
+    --secondary-color: #D9BF77;
+    --background-color: #F0EDEE;
+    --head-foot-color: #3D220F;
+    --text-color: #965D30;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 100px;
+    font-size: 30px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+.nav-links a:hover{
+    background-color: black;
+    color: #d1d6cb;
+}
+.button button{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+
+
+}
+.button button:hover{
+    background-color: black;
+    color: #d1d6cb;
+    cursor: pointer;
+}
+
+  
+  .header {
+    margin-bottom: 3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .about-yoga h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .about-yoga p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .yoga-benefits {
+    background-color: var(--background-color);
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .yoga-benefits h1 {
+    margin-bottom: 3rem;
+    background-color: #867C72;
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+
+  }
+  
+  .benefits-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .benefit {
+    background-color: #fff;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 18%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  .benefit i {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .benefit h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .benefit p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .yoga-types h2 {
+    margin-bottom: 3rem;
+    background-color: #867C72;
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* height: 400px; */
+  }
+  
+  .type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem auto;
+    gap: 2rem;
+    width: 1600px;
+    
+    
+
+    /* max-width: 1300px; */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .type:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  .type img {
+    width: 50%;
+    /* height: 10%; */
+    height: 450px;
+    border-radius: 12px;
+  }
+  
+  .type .content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .type .content h3 {
+    color: var(--text-color);
+    font-size:2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .type .content p {
+    font-size: 1.3rem;
+  }
+  
+  .type:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .level-category {
+    margin-bottom: 3rem;
+  }
+  
+  .level-category h3 {
+    color: var(--text-color-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .video-section .container h2{
+    margin-bottom: 3rem;
+    background-color: #867C72;
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .videos-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 22%;
+    height: 250px;
+  }
+  
+  .video-card iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  @media (max-width: 1024px) {
+    .video-card {
+      width: 30%;
+    }
+  
+    .benefit {
+      max-width: 22%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .video-card {
+      width: 48%;
+    }
+  
+    .type {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .type img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .type:nth-child(even) {
+      flex-direction: column;
+    }
+  
+    .benefit {
+      max-width: 45%;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-card {
+      width: 100%;
+    }
+  
+    .benefit {
+      max-width: 100%;
+    }
+  }
+  
+
+footer {
+      background-color: #3d220f;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1em;
+    }
+  </style>
+
+    
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="shantikiranlogo.jpg" width="130px" height="auto" alt="ShantiKiran Logo">
+      <a href="Shantikiranhomepage.html" class="heading-name-a" target="_parent">
+        <h1>Shanti Kiran</h1>
+        <p>Connect with Inner Calm</p>
+      </a>
+    </div>
+    <nav>
+      <a href="Shantikiranmembership.html">Membership</a>
+      <a href="Shantikiranblog.html">Blog</a>
+      <a href="Shantikiranaboutyoga.html">About Yoga</a>
+      <a href="Shantikiransupport.html">Support</a>
+      <a href="Shantikiranourteam.html">Our Team</a>
+            
+      
+
+    </nav>
+  </header>
+
+  <!-- About Yoga Section -->
+  <section class="about-yoga">
+    <div>
+      <h1>Discover the Essence of Yoga</h1>
+      <p>Yoga is an ancient practice that originated in India over 5,000 years ago. Derived from the Sanskrit word "Yuj," meaning union, yoga symbolizes the harmony between mind, body, and spirit. It combines physical postures, breathing techniques, and meditation to promote overall well-being and inner peace.</p>
+      <p>Historically, yoga was a spiritual discipline aimed at self-realization and liberation. Ancient texts such as the Yoga Sutras by Patanjali provide guidelines for living a balanced life, integrating ethical principles, mental focus, and physical practices. Over time, yoga has evolved, blending traditional philosophies with modern approaches, making it accessible to people worldwide.</p>
+
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="yoga-benefits">
+    <h1>Benefits of Yoga</h1>
+    <div class="benefits-row">
+      <div class="benefit">
+        <i class="fas fa-heart"></i>
+        <h3>Improves Heart Health</h3>
+        <p>Yoga helps in improving cardiovascular health by lowering blood pressure and improving circulation.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-brain"></i>
+        <h3>Boosts Mental Clarity</h3>
+        <p>It enhances brain function, reduces stress, and promotes mental clarity and focus.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-spa"></i>
+        <h3>Enhances Flexibility</h3>
+        <p>Yoga promotes flexibility, stretching muscles and improving overall mobility.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-balance-scale"></i>
+        <h3>Improves Balance</h3>
+        <p>Yoga enhances balance, stability, and coordination, benefiting your physical and mental well-being.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-user-md"></i>
+        <h3>Reduces Stress</h3>
+        <p>It lowers stress hormones, promotes relaxation, and creates a sense of peace and calm.</p>
+      </div>
+    </div>
+  </section>
+  <section class="yoga-types">
+    <h2>Main Types of Yoga</h2>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733570660/yoga-03_ddxh8l.jpg" alt="Hatha Yoga" width="50%" height="auto">
+      <div class="content">
+        <h3>Hatha Yoga</h3>
+        <p> A traditional form of yoga focused on physical postures (asanas) and breath control (pranayama). It’s
+          slower-paced, offering an introduction to basic poses and alignment. Ideal for beginners, Hatha Yoga helps
+          improve strength, flexibility, and mental clarity through mindful practice and relaxation.</p>
+        
+      </div>
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569815/yoga-06_wdfung.jpg" alt="Vinyasa Yoga" width="50%">
+      <div class="content">
+        <h3>Vinyasa Yoga</h3>
+        <p> Known for its dynamic flow, Vinyasa Yoga connects breath with movement. It includes various poses performed
+          in a continuous, fluid sequence, often linked to music. This style promotes cardiovascular health,
+          flexibility, and strength, providing an energetic practice suitable for those who enjoy variety and challenge
+          in their routine.</p>
+       
+      </div>
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569815/yoga-01_mkeaam.jpg" alt="Ashtanga yoga" width="50%">
+      <div class="content">
+        <h3>Ashtanga Yoga</h3>
+        <p> A physically demanding style of yoga that follows a strict sequence of postures, performed in a set order
+          with synchronized breath. Ashtanga Yoga builds strength, flexibility, and stamina, focusing on discipline,
+          consistency, and alignment. This practice is suitable for practitioners who want a rigorous and structured
+          workout.</p>
+       
+      </div>
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569814/yoga-03_vgyqwy.jpg" alt="Bikram Yoga" width="50%">
+      <div class="content">
+        <h3>Bikram Yoga</h3>
+        <p>Typically practiced in a heated room (105°F/40°C), Bikram Yoga consists of a series of 26 poses and 2
+          breathing exercises. The heat encourages flexibility, detoxification, and cardiovascular benefits. It’s a
+          challenging practice that improves physical strength, endurance, and focus while promoting mindfulness and
+          body awareness.</p>
+        
+      </div>
+
+
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569815/yoga-04_iupnaa.jpg" alt="Kundalini Yoga" width="50%">
+      <div class="content">
+        <h3>Kundalini Yoga</h3>
+        <p> Focuses on awakening the dormant spiritual energy within the body, often referred to as Kundalini. Through
+          breathwork (pranayama), chanting (mantras), and dynamic movements, it aims to elevate consciousness, balance
+          energy, and promote emotional healing. This practice enhances spiritual growth while addressing both physical
+          and mental well-being.</p>
+        
+      </div>
+
+
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569817/yoga-08_u6h1np.jpg" alt="Iyengar Yoga" width="50%">
+      <div class="content">
+        <h3>Iyengar Yoga</h3>
+        <p> Known for its precision and alignment, Iyengar Yoga emphasizes the correct alignment of the body in every
+          posture. Props like blocks, straps, and blankets are used to assist with poses. This style improves
+          flexibility, strength, and balance, making it accessible for practitioners of all levels, especially those
+          with injuries.</p>
+        
+      </div>
+
+
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569816/yoga-05_ir8gom.jpg" alt="Yin Yoga" width="50%">
+      <div class="content">
+        <h3>Yin Yoga</h3>
+        <p> A slower, more meditative form of yoga where poses are held for extended periods (3-5 minutes). Yin Yoga
+          targets deep connective tissues and joints, promoting flexibility and restoring balance in the body. It
+          encourages relaxation and mindfulness, making it ideal for stress relief, emotional healing, and deep tissue
+          release.</p>
+        
+      </div>
+
+
+    </div>
+    <div class="type">
+      <img src="https://res.cloudinary.com/dpa83cxh9/image/upload/v1733569817/yoga-07_hh141k.jpg" alt="Restorative Yoga" width="50%">
+      <div class="content">
+        <h3>Restorative Yoga</h3>
+        <p> Focuses on relaxation and healing by using props such as blankets and bolsters to support the body in
+          passive poses. Restorative Yoga helps calm the nervous system, relieve stress, and restore energy. It’s a
+          gentle, soothing practice designed to promote deep relaxation, mental clarity, and physical rejuvenation.</p>
+        
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <h2>Yoga Tutorials by Our Expert Trainers</h2>
+
+      <div class="level-category">
+        <h3>Beginner</h3>
+        <div class="videos-grid">
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/Ai5RehNnZC8?si=J9ofohX6FwSAGEUN"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/1vNUJLgDqxs?si=5kzrJzf8bbGWeHL-"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/dO4PTLKNiVQ?si=aJuqTBqRR2Fu2p2q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/ybgqdffxrQE?si=UEzllOtqibtGIASi"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+      <div class="level-category">
+        <h3>Intermediate</h3>
+        <div class="videos-grid">
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/U1cHGJYIwhA?si=vPRpqA5i_uS4B-1L"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/WNTaTe5xhgQ?si=F47U_YjRUIVNJcnp"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/UU6CDCQjZbg?si=mu54P-dsdJ67A7IR"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/j6Fdbn7nATU?si=Ng8msdqLnes962Nn"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+      <div class="level-category">
+        <h3>Moderate</h3>
+        <div class="videos-grid">
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/_LvGTQ3Aq-g?si=VVbvXhnJpd_uritx"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/ecZ09liTiFI?si=5nYAccjZzW-SAsqP"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/8HK9MsTgOLc?si=CRSKa_POaEI5wThb"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/DAdjf01N310?si=U0-2RoydbfwRK_x4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <script>
+    // Smooth scrolling for navigation links (if applicable)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add animations on scroll
+    const animatedElements = document.querySelectorAll('.benefit, .type, .video-card');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate'); // Add a class to trigger CSS animation
+          observer.unobserve(entry.target); // Stop observing after animation is triggered
+        }
+      });
+    }, {
+      threshold: 0.2 // Trigger animation when 20% of the element is visible
+    });
+
+    animatedElements.forEach(element => observer.observe(element));
+
+    // Add animation to the header
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+
+    // Select all container elements
+    const textElements = document.querySelectorAll('.about-yoga');
+    // Add the animation class on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      textElements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('container-animate');
+        }, index * 200); // Stagger animations by 200ms
+      });
+    });
+  </script>
+  <footer>
+    <p>&copy; 2024 Shanti Kiran | All Rights Reserved</p>
+  </footer>
+  </footer>
+</body>
+
+</html>
+</body>
+
+</html>

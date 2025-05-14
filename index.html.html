@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Shanti Setu Login & Signup</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background:white;
+      background-size: 400% 400%;
+    
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 350px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border-color: #a18cd1;
+      box-shadow: 0 0 5px rgba(161, 140, 209, 0.5);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #fbc2eb, #a18cd1);
+      transform: scale(1.05);
+    }
+
+    .toggle-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .toggle-link a {
+      color: #a18cd1;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .toggle-link a:hover {
+      color: #fbc2eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 id="form-title">Login</h2>
+    <form id="auth-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="button" id="submit-btn">Login</button>
+    </form>
+    <div class="toggle-link">
+      <span id="toggle-text">Don't have an account?</span>
+      <a href="#" id="toggle-form">Sign up</a>
+    </div>
+  </div>
+
+  <script>
+    const formTitle = document.getElementById('form-title');
+    const authForm = document.getElementById('auth-form');
+    const toggleForm = document.getElementById('toggle-form');
+    const toggleText = document.getElementById('toggle-text');
+    const submitBtn = document.getElementById('submit-btn');
+
+    let isLogin = true; // Tracks whether the form is in Login mode or Signup mode
+
+    // Toggle between Login and Signup forms
+    toggleForm.addEventListener('click', () => {
+      isLogin = !isLogin; // Switch between modes
+      formTitle.textContent = isLogin ? 'Login' : 'Sign up';
+      submitBtn.textContent = isLogin ? 'Login' : 'Sign up';
+      toggleText.textContent = isLogin ? "Don't have an account?" : 'Already have an account?';
+      toggleForm.textContent = isLogin ? 'Sign up' : 'Login';
+    });
+
+    // Handle form submission
+    submitBtn.addEventListener('click', () => {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (isLogin) {
+        // Simulated login validation
+        if (password === 'password123') {
+          alert('Login successful!'); // Notify user of successful login
+          window.location.href = 'shantisetuhomepage.html'; // Redirect to homepage
+        } else {
+          alert('Invalid username or password.'); // Notify user of failure
+        }
+      } else {
+        // Handle signup by showing a success message
+        alert(`Account created for ${username}. You can now log in.`);
+        // Automatically switch back to Login mode
+        isLogin = true;
+        formTitle.textContent = 'Login';
+        submitBtn.textContent = 'Login';
+        toggleText.textContent = "Don't have an account?";
+        toggleForm.textContent = 'Sign up';
+      }
+    });
+  </script>
+</body>
+</html>

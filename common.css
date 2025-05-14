@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #3A6351;
+    --secondary-color: #D9BF77;
+    --background-color: #F0EDEE;
+    --head-foot-color: #3D220F;
+    --text-color: #965D30;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 3em;
+    height: 60%;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    height: 40%;
+    font-style: italic;
+    margin: 0;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-right: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-right: 80px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #887C74;
+    background-color: #D9BF77;
+}
+
+.heading-name-a {
+    color: #965D30;
+    text-decoration: solid;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+    background-color: white;
+    color: var(--text-color);
+    line-height: 1.6;
+}

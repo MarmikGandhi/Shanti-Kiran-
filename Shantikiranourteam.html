@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ourteam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css" />
+
+    <style>
+        body {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            background-color: #F0EDEE;
+            padding: 20px;
+            padding-top: 150px;
+        }
+
+        .grid {
+            display: grid;
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(250, 247, 247);
+            border: 0;
+            gap: 80px;
+            border-radius: 40px;
+            padding: 50px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            ;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            height: 450px;
+            width: 220px;
+            background-color: #f1edda;
+            border: 0;
+            border-radius: 40px;
+
+            padding: 30px;
+
+
+            box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            z-index: 2;
+            transition: 0.2s;
+            transform: scale(1.1);
+            background-color: #965D30;
+
+            .name {
+                color: white;
+            }
+
+            .description {
+                color: white;
+            }
+        }
+
+        .name {
+
+            margin: 0;
+            margin-top: 10px;
+        }
+
+
+        .pfp-img {
+            height: 60%;
+            width: 100%;
+
+            border: 3px solid #F0EDEE;
+            border-radius: 40px;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .book-btn {
+            background-color: #7a7a64;
+            border: 2px solid white;
+            border-radius: 40px;
+            font-size: large;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            width: 50%;
+            height: 20%;
+            transition: 0.3s;
+        }
+
+        .book-btn:hover {
+            z-index: 2;
+            background-color: white;
+            border: 2PX solid #7a7a64;
+            color: #7a7a64;
+            transition: 0.3s;
+        }
+        footer {
+            background-color: var(--head-foot-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1em;
+        }
+    </style>
+    <title>ShantiKiran</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="shantikiranlogo.jpg" width="130" height="auto" alt="ShantiKiran Logo">
+            <a href="Shantikiranhomepage.html" class="heading-name-a" target="_parent">
+                <h1>Shanti Kiran</h1>
+                <p>Connect with Inner Calm</p>
+            </a>
+        </div>
+        <nav>
+            <a href="Shantikiranmembership.html">Membership</a>
+            <a href="Shantikiranblog.html">Blog</a>
+            <a href="Shantikiranaboutyoga.html">About Yoga</a>
+            <a href="Shantikiransupport.html">Support</a>
+            <a href="Shantikiranourteam.html">Our Team</a>
+            
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="card" id=" Kalpana Paniker">
+            <a href="profile.html" class="card" id="Kalpana Paniker">
+                <img class="pfp-img" src="Images/instructor1.jpg">
+                <h1 class="name"> Kalpana Paniker</h1>
+                <p class="description">"Breathe in peace, exhale stress."</p>
+            </a>
+
+        </div>
+        <div class="card" id=" Bhavna Chandwani">
+            <a href="profile2.html" class="card" id="Bhavna Chandwani">
+                <img class="pfp-img" src="Images/instructor2.png">
+                <h1 class="name">Bhavna Chandwani </h1>
+                <p class="description">"Yoga is the journey of the self, through the self, to the self."</p>
+            </a>
+
+
+
+
+
+            </button>
+        </div>
+
+        <div class="card" id="Vineeta Rajan">
+            <a href="profile3.html" class="card" id="Vineeta Rajan">
+                <img class="pfp-img" src="Images/instructor3.jpg">
+                <h1 class="name">Vineeta Rajan</h1>
+                <p class="description">"Inhale the future, exhale the past."</p>
+            </a>
+
+
+        </div>
+
+        <div class="card" id="Dhara Mitesh Gajjar">
+            <a href="profile4.html" class="card" id="Dhara Mitesh Gajjar">
+                <img class="pfp-img" src="Images/instructor4.jpg">
+                <h1 class="name">Dhara Mitesh Gajjar</h1>
+            
+              <p class="description"> "Your body can do it; it’s your mind you have to convince."
+            </p>
+            </a>
+
+        </div>
+        
+
+       
+        
+    </div>
+   
+   <footer>
+    <p>&copy; 2024 Shanti Kiran | All Rights Reserved</p>
+</footer>
+
+</body>
+
+</html>

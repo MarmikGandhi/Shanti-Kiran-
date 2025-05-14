@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shanti Kiran Payment</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F0EDEE;
+      color: #965D30;
+      margin: 0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      height: 130px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+    form {
+      margin-top: 160px;
+      max-width: 800px;
+      background: white;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px #ccc;
+    }
+    .inputBox {
+      margin-bottom: 15px;
+    }
+    .inputBox label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .inputBox input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .submit_btn {
+      background-color: #3A6351;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .submit_btn:hover {
+      background-color: #D9BF77;
+    }
+    footer {
+      background-color: #3D220F;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo" style="display: flex; align-items: center;">
+    <img src="shantikiranlogo.jpg" alt="Shanti Kiran Logo" height="80">
+    <div style="margin-left: 15px;">
+      <h1>Shanti Kiran</h1>
+      <p>Connect with Inner Calm</p>
+    </div>
+  </div>
+</header>
+
+<form action="process_payment.php" method="POST">
+  <h2 style="text-align: center;">Billing & Payment Details</h2>
+
+  <div class="inputBox"><label>Full Name</label><input type="text" name="full_name" required></div>
+  <div class="inputBox"><label>Email</label><input type="email" name="email" required></div>
+  <div class="inputBox"><label>Phone</label><input type="text" name="phone" required></div>
+  <div class="inputBox"><label>Address</label><input type="text" name="address" required></div>
+  <div class="inputBox"><label>City</label><input type="text" name="city" required></div>
+  <div class="inputBox"><label>State</label><input type="text" name="state" required></div>
+  <div class="inputBox"><label>Zip Code</label><input type="text" name="zip_code" required></div>
+  <div class="inputBox"><label>Country</label><input type="text" name="country" required></div>
+  <div class="inputBox"><label>Yoga Type</label><input type="text" name="yoga_type" id="yoga_type" readonly required></div>
+  <div class="inputBox"><label>Price (INR)</label><input type="text" name="price" id="price" readonly required></div>
+  <div class="inputBox"><label>Payment Date</label><input type="date" name="payment_date" required></div>
+
+  <div id="qrSection" style="text-align:center; margin-top:30px;">
+    <h3>Scan & Pay</h3>
+    <img src="gpay_qr.jpg" style="width: 200px;"><br>
+    <p>UPI ID: <strong id="upiID">makwanamittal416@oksbi</strong></p>
+    <button type="button" onclick="copyUPI()" class="submit_btn">Copy UPI ID</button>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <div class="inputBox"><label>Transaction ID</label><input type="text" name="transaction_id" required></div>
+    <div class="inputBox"><label>Payer Name</label><input type="text" name="payer_name" required></div>
+  </div>
+
+  <button type="submit" class="submit_btn" style="margin-top: 20px;">Submit Payment</button>
+</form>
+
+<footer>
+  <p>&copy; 2024 Shanti Kiran | All Rights Reserved</p>
+</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const yogaType = params.get("yoga_type");
+  const price = params.get("price");
+
+  if (yogaType) document.getElementById("yoga_type").value = yogaType;
+  if (price) document.getElementById("price").value = price;
+
+  function copyUPI() {
+    const upi = document.getElementById("upiID").innerText;
+    navigator.clipboard.writeText(upi).then(() => {
+      alert("UPI ID copied to clipboard!");
+    });
+  }
+</script>
+
+</body>
+</html>
