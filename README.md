@@ -28,10 +28,10 @@ These files are interlinked for a seamless user experience.
 - User Registration: Front-end sign-up form with validation and fetch call to PHP backend.
 
 ## Tech Stack
-HTML5 & CSS3 
-JavaScript 
-Responsive Design 
-PHP backend placeholder
+-- HTML5 & CSS3 
+-- JavaScript 
+-- Responsive Design 
+-- PHP backend placeholder
 
 ## Setup Instructions
 
