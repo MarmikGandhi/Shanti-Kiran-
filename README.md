@@ -5,6 +5,7 @@ Shanti Kiran is a responsive, multi-page web application that promotes physical,
 This repository includes the following main HTML files:
 
 File	Description
+
 Shantikiranhomepage.html	Landing page with platform overview, intro video, and Google Meet link
 Shantikiranaboutyoga.html	Educational content about yoga styles, benefits, and embedded tutorials
 Shantikiranblog.html	A blog section featuring yoga wisdom, tips, and links to full articles
