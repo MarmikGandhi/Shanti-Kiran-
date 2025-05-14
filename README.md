@@ -6,14 +6,14 @@ This repository includes the following main HTML files:
 
 File	Description
 
-Shantikiranhomepage.html	Landing page with platform overview, intro video, and Google Meet link
-Shantikiranaboutyoga.html	Educational content about yoga styles, benefits, and embedded tutorials
-Shantikiranblog.html	A blog section featuring yoga wisdom, tips, and links to full articles
-Shantikiranbookings.html	Booking interface with instructor profiles and "Book Now" buttons
-Shantikiranourteam.html	Team introduction with instructor cards
-Shantikiranpaymentgateway.html	Payment form with dynamic UPI and QR scan section
-Shantikiransupport.html	Support center with FAQ, contact form, and assistance links
-signup.html	Sign-up form with client-side validation and backend fetch logic
+- Shantikiranhomepage.html --> Landing page with platform overview, intro video, and Google Meet link
+- Shantikiranaboutyoga.html --> Educational content about yoga styles, benefits, and embedded tutorials
+- Shantikiranblog.html --> A blog section featuring yoga wisdom, tips, and links to full articles
+- Shantikiranbookings.html --> Boking interface with instructor profiles and "Book Now" buttons
+- Shantikiranourteam.html	--> Team introduction with instructor cards
+- Shantikiranpaymentgateway.html --> Payment form with dynamic UPI and QR scan section
+- Shantikiransupport.html --> Support center with FAQ, contact form, and assistance links
+- Signup.html	--> Sign-up form with client-side validation and backend fetch logic
 
 These files are interlinked for a seamless user experience.
 
